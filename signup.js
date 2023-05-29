@@ -1,6 +1,9 @@
 // API 경로
 const URL_signup = 'https://port-0-safedream-backend-otjl2cli33x5tw.sel4.cloudtype.app';
 
+// 아이디 중복확인을 통과했는지 확인하는 변수
+let isIdChecked = false;
+
 // 아이디 중복확인 함수
 function checkUserID() {
     const userid = document.getElementById('userid').value;
@@ -9,12 +12,18 @@ function checkUserID() {
         .then(data => {
             if (data.message) {
                 alert(data.message);
+                isIdChecked = data.message === '사용 가능한 아이디입니다.'; // 중복확인이 성공했다면 isIdChecked를 true로 설정
             }
         });
 }
 
 // 회원가입 함수
 function registerUser() {
+    if (!isIdChecked) {
+        alert('아이디 중복 확인이 필요합니다.');
+        return;
+    }
+
     const username = document.getElementById('username').value;
     const userid = document.getElementById('userid').value;
     const password = document.getElementById('userpw').value;
@@ -22,9 +31,8 @@ function registerUser() {
     const hp = document.getElementById('hp').value;
     const guardianHp = document.getElementById('guardianHp').value;
 
-    // 추가된 부분: 입력값 확인
     if (!username || !userid || !password || !userpw_a || !hp || !guardianHp) {
-        alert('모든 개인정보를 입력해주세요.');
+        alert('모든 개인정보를 채워주세요.');
         return;
     }
 
