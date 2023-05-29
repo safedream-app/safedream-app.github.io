@@ -3,9 +3,8 @@ const URL_signup = 'https://port-0-safedream-backend-otjl2cli33x5tw.sel4.cloudty
 
 // 아이디 중복확인 함수
 function checkUserID() {
-    
     const userid = document.getElementById('userid').value;
-    fetch(`${URL_signup}/check?userid=${userid}`)
+    fetch(`${URL_signup}/safedream/check?userid=${userid}`)
         .then(response => response.json())
         .then(data => {
             if (data.message) {
