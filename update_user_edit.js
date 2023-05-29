@@ -77,3 +77,11 @@ function userDelete() {
             alert('회원 탈퇴 요청에 실패했습니다.');
         });
 }   
+
+function resetFields() {
+    document.getElementById('username').value = '';
+    document.getElementById('userpw').value = '';
+    document.getElementById('userpw_a').value = '';
+    document.getElementById('hp').value = '';
+    document.getElementById('guardianHp').value = '';
+}
