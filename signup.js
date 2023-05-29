@@ -54,7 +54,7 @@ function registerUser() {
     .then(data => {
         if (data.message) {
             alert(data.message);
-            location.href='./login_edit.html';
+            location.href='./index.html';
         }
     });
 }
