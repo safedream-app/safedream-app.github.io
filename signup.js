@@ -24,7 +24,7 @@ function registerUser() {
 
     // 추가된 부분: 입력값 확인
     if (!username || !userid || !password || !userpw_a || !hp || !guardianHp) {
-        alert('모든 개인정보를 채워주세요.');
+        alert('모든 개인정보를 입력해주세요.');
         return;
     }
 
