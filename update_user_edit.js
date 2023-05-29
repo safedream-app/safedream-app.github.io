@@ -11,6 +11,11 @@ function handleUpdate() {
     const hp = document.getElementById('hp').value;
     const guardianHp = document.getElementById('guardianHp').value;
 
+// 필드가 비어있는지 확인
+    if (!username || !password || !hp || !guardianHp) {
+        alert('모든 개인정보를 입력해주세요.');
+        return;
+    }
 
     if (password !== passwordConfirm) {
         alert('비밀번호가 일치하지 않습니다. 다시 입력해주세요.');
