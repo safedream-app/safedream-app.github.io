@@ -241,7 +241,7 @@ var map = new kakao.maps.Map(mapContainer, mapOption); // 지도를 생성합니
 
 // open API(여성안심지킴이집)
 async function func1() {
-    var result = await fetch('http://openapi.seoul.go.kr:8088/5345676b626b696d353958574e4268/json/tbSafeReturnService/0/347/', {
+    var result = await fetch('safewom.json', {
         method: "GET",
         headers: {
             "Content-Type": "application/json",
@@ -310,14 +310,7 @@ async function func1() {
 
 // open API(아동안전지킴이집)
 async function func2() {
-    // var result = await fetch('https://www.safe182.go.kr/api/lcm/safeMap.do?esntlId=10000546&authKey=9287c47a452a42bc&minY=37.4267&minX=126.7644&maxY=37.7010&maxX=127.1839&detailDate1=09&pageIndex=1&pageUnit=100', {
-    //     method: "POST",
-    //     headers: {
-    //         "Content-Type": "application/json",
-    //     }
-    // }).then((response) => response.json())
-    //     .then(data => console.log(data))
-    //     .catch(err => console.log(err))
+
     var result = await fetch('safekid_fin.json')
     .then(response => response.json())
 
