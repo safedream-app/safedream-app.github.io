@@ -105,6 +105,9 @@ p.up_text{
     border-radius: 13px;
 }
 
+#userid {
+    font-family: none;
+}
 #userpw{
     color: #000;
 }

@@ -169,6 +169,7 @@ p {
     color: #1f1e1e;
     text-align: left;
     margin: 5px;
+    margin-left: 0;
     font-size: 17px;
     padding-bottom: 3px;
     border-bottom: 1px solid rgb(22, 22, 22);
@@ -183,6 +184,8 @@ p {
 #text {
     height: 80%;
     margin: 5px;
+    margin-left: 0;
+    
 }
 #text_content{
     font-family: 'twayair';
@@ -325,7 +328,7 @@ a.main:visited {
     color: black;
 }
 a.sub {
-    color: #888888;
+    color: #888888 !important;
     font-weight: 300;
     padding-left: 10px;
 }

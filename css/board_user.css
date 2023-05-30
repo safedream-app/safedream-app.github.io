@@ -327,7 +327,7 @@ a.main:visited {
     color: black;
 }
 a.sub {
-    color: #888888;
+    color: #888888 !important;
     font-weight: 300;
     padding-left: 10px;
 }
