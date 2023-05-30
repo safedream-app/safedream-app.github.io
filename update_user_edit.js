@@ -66,7 +66,7 @@ function userDelete() {
                 alert('회원 탈퇴가 완료되었습니다.');
                 // 페이지 리디렉션 또는 다른 작업 수행
                 localStorage.clear(token);
-                location.href = './login_edit.html';
+                location.href = './index.html';
             } else {
                 alert('회원 탈퇴에 실패했습니다.');
                 // 에러 처리 등의 동작 수행
