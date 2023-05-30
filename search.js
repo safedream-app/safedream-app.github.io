@@ -241,7 +241,7 @@ var map = new kakao.maps.Map(mapContainer, mapOption); // 지도를 생성합니
 
 // open API(여성안심지킴이집)
 async function func1() {
-    var result = await fetch('https://openapi.seoul.go.kr:8088/5345676b626b696d353958574e4268/json/tbSafeReturnService/0/347/', {
+    var result = await fetch('http://openapi.seoul.go.kr:8088/5345676b626b696d353958574e4268/json/tbSafeReturnService/0/347/', {
         method: "GET",
         headers: {
             "Content-Type": "application/json",
