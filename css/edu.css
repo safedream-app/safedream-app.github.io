@@ -363,6 +363,9 @@ hr {
 }
 
 /* 테이블 박스 꾸미기 */
+#tablebox {
+    width: 100%;
+}
 table.type10 {
     border-collapse: collapse;
     text-align: left;
@@ -372,6 +375,7 @@ table.type10 {
     margin: 0;
     display: block;
     overflow: auto;
+    width: 100%;
 }
 table.type10 thead th {
     width: 10px;
@@ -413,7 +417,7 @@ table.type11 {
     border-spacing: 1px;
     text-align: center;
     line-height: 1.5;
-
+    width: 100%;
     display: block;
     overflow: auto;
 }
@@ -427,7 +431,7 @@ table.type11 th {
 }
 table.type11 td {
     width: 155px;
-    paddincmdg: 10px;
+    padding: 10px;
     vertical-align: top;
     border-bottom: 1px solid #ccc;
     background: #eee;
