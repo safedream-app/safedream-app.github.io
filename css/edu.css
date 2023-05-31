@@ -427,13 +427,17 @@ table.type11 th {
 }
 table.type11 td {
     width: 155px;
-    padding: 10px;
+    paddincmdg: 10px;
     vertical-align: top;
     border-bottom: 1px solid #ccc;
     background: #eee;
     color: #000;
 }
-table.type11 td .even {
-    background: #ffffff;
-    color: #000;
+
+#sinmungo {
+    overflow: scroll;
+}
+#sinmungo > img{
+    justify-content: center;
+    align-items: center;
 }
