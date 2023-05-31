@@ -128,7 +128,6 @@ p.up_text{
     border: none;
     border-radius: 13px;
     font-size: small;
-    font-family: 'twayair';
     margin-bottom: 15px;
 }
 .nav{
@@ -166,7 +165,7 @@ div.btn_update{
 }
 
 #del_btn{
-    color: white;
+    color: black;
     float: right;
     border: none;
     display: flex;
