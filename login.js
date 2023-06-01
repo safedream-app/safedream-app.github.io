@@ -30,8 +30,7 @@ function loginSrv() {
       location.href = './Main_1.html'; // 로그인 성공 시 index.html로 리디렉션
     })
     .catch(function(error) {
-      console.error(error);
-      alert('로그인 실패: ' + error.message); // 로그인 요청 실패 시 알림 표시
+
     });
 
 }
