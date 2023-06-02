@@ -124,10 +124,11 @@ p.up_text{
 .input {
     padding-left: 10px;
     width: 94%;
-    height: 29px;
+    height: 6%;
     border: none;
-    border-radius: 13px;
+    border-radius: 18px;
     font-size: small;
+    font-weight: 700;
     margin-bottom: 15px;
 }
 .nav{
@@ -151,6 +152,7 @@ div.btn_update{
 #btns_bottom {
     display: flex;
     margin-bottom: 15px;
+    justify-content: space-around;
 }
 #btn_bottom1, #btn_bottom2 {
     color: white;
@@ -210,6 +212,20 @@ div.btn_update{
 }
 
 /* 햄버거 */
+.sidebar_back{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+.sidebar_back.active{
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.329);
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
 .sidebar{
     display: none;
     position: absolute;

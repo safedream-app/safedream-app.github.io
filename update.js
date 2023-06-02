@@ -16,7 +16,16 @@ function delToggle() {
 function toggleMenu(){
     let sidebar = document.querySelector('.sidebar');
     sidebar.classList.toggle('active');
+    let back = document.querySelector(".sidebar_back")
+    back.classList.toggle('active');
 }
+function toggleMenu_back(){
+    let sidebar = document.querySelector('.sidebar');
+    sidebar.classList.toggle('active');
+    let back = document.querySelector(".sidebar_back")
+    back.classList.toggle('active');
+}
+
 let switch_start = false;
 function singo_btn(guardianHp) {
     const userAgent = navigator.userAgent.toLowerCase();

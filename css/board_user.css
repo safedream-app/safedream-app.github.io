@@ -273,6 +273,20 @@ li.date {
 
 
 /* 햄버거 */
+.sidebar_back{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+.sidebar_back.active{
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.329);
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
 .sidebar{
     display: none;
     position: absolute;
