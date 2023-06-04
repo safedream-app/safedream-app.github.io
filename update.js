@@ -93,6 +93,8 @@ function playMusic(){
         audio.pause()
         switch_siren = false;
     }
+    let siren_btn = document.querySelector(".siren_btn")
+    siren_btn.classList.toggle('active');
 }
 /* 아이디 / 패스워드 찾기 */
 let IDswitch = false;    //스위치 상태 기억할 변수

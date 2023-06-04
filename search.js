@@ -288,7 +288,7 @@ async function func1() {
             <h2 style="font-size:18px">${REMARK}</h2>
             <h2 style="display:block; color:gray; font-weight:500">${ADDRESS}</h2><br>
             <img src="./images/phone.png" style="width: 20px; height: 20px; margin: 5px; margin-right:0; float: left;">
-            <h2 style="display:inline; float: left;">${HP} (관리기관 전화번호)</h2>`
+            <h2 style="display:inline; float: left;">${HP} (관리기관 번호)</h2>`
 
             const infoBox = document.getElementById('content');
             infoBox.style.display = 'block'
